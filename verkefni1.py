@@ -23,10 +23,10 @@ def vid():
                     <img src="static/mass-effect-3.jpg" alt="Mass effect">
                </body>
            </html>
-        
+        j"""
 
 
-    """
+
 @route('/verkefni6/')
 def verk6 ():
     return static_file(filename="http://tsuts.tskoli.is/2t/0711992829/vsh2/verkefni6",root="http://tsuts.tskoli.is/2t/0711992829/vsh2/verkefni6")
