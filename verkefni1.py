@@ -1,4 +1,5 @@
 from bottle import *
+import os
 
 @route('/')
 def vid():
@@ -37,6 +38,7 @@ def static_skrar(skra):
 def error404(error):
     return '<p>UmbeÃƒÂ°in sÃƒÂ­ÃƒÂ°a er ekki til</p><a href="/">Mass effect</a>'
 
-run(host='localhost', port=8080, debug=True)
+run(host='0.0.0.0', port=os.environ.get('PORT'))
+#run(host='localhost', port=8080, debug=True)
 
 
